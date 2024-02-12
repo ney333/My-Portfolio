@@ -616,7 +616,11 @@ footer {
 @media screen and (max-width: 1030px) {
 
     /* General */
-
+    
+    * {
+        max-width: 100%;
+    }
+    
     .flex {
         flex-direction: column;
     }
@@ -631,7 +635,7 @@ footer {
     }
 
     /* Header */
-
+    
     .menu-desktop,
     .btn-contact {
         display: none;
@@ -650,6 +654,7 @@ footer {
         z-index: 99999;
         width: 0%;
         overflow: hidden;
+        overflow-x: hidden;
         transition: 0.7s;
         box-shadow: 0 0 50px 10px antiquewhite;
     }
@@ -663,8 +668,8 @@ footer {
     }
 
     .mobile-menu nav ul{
-        text-align: right;
-        padding: 40px 0;
+        text-align: left;
+        padding: 40px 4%;
     }
     
     .mobile-menu nav ul li a{
@@ -705,23 +710,53 @@ footer {
     /* Home area */
 
     section.home-area {
-        padding: 40px;
+        height: 100vh;
+        min-width: 110%;
+        padding: 20px 4%;
+        box-shadow: none;
     }
 
     .home-area h1 {
         font-size: 30px;
+        text-align: center;
     }
 
     .home-area p {
         font-size: 18px;
+        text-align: center;
     }
 
     .home-area .img-home-area img {
-        width: 180px;
+        display: none;
+        /*width: 180px;*/
+    }
+
+    .home-area h1, .home-area p {
+        position: relative;
+        animation: floating 2s ease-in-out infinite alternate;
+        /*call the animation, duration of each cycle, floating effect, looping, walking fowards and backwards*/
+    }
+    
+    @keyframes floating {
+    
+        /* floating img animation*/
+        0% {
+            top: 0;
+        }
+    
+        100% {
+            top: 30px;
+        }
     }
 
     /* About area */
 
+    .about-area{
+        min-width: 110%;
+        padding: 20px 4%;
+        box-shadow: none;
+    }
+    
     .about-area .title {
         margin-top: 10px;
         margin-bottom: 30px;
@@ -730,13 +765,17 @@ footer {
     /* Projects Area */
 
     section.projects-area {
-        padding: 40px 8%;
+        min-width: 110%;
+        padding: 20px;
+        box-shadow: none;
     }
 
     /* Certifications Area */
 
     section.certifications-area {
-        padding: 40px 4%;
+        min-width: 110%;
+        padding: 20px;
+        box-shadow: none;
     }
 
     .certifications-area .img-cert {
@@ -747,8 +786,10 @@ footer {
     /* Skills area */
 
     section.skills-area {
-        padding: 40px 8%;
         margin-top: 60px;
+        min-width: 110%;
+        padding: 20px;
+        box-shadow: none;
     }
 
     .skills-area h2 {
@@ -764,7 +805,9 @@ footer {
     /* Experience area */
 
     section.experience-area {
-        padding: 20px 4%;
+        min-width: 110%;
+        padding: 20px;
+        box-shadow: none;
     }
     
     .experience-area .title {
@@ -783,7 +826,7 @@ footer {
     /* Contact */
 
     form {
-        width: 95%;
+        width: 100%;
     }
 
     .contact h4 {
@@ -794,4 +837,4 @@ footer {
         padding-left: 20px;
     }
     
-}
+} 
