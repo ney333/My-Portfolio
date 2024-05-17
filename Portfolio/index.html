@@ -40,6 +40,31 @@
                         <button>Contact</button>
                     </a>
             </div><!--btn-contato-->
+
+            <div class="btn-open" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="btn-close">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a class="short-cut" href="#home-area">Home</a></li>
+                        <li><a class="short-cut" href="#about-area">About Me</a></li>
+                        <li><a class="short-cut" href="#projects-area">Projects</a></li>
+                        <li><a class="short-cut" href="#certifications-area">Certifications</a></li>
+                        <li><a class="short-cut" href="#skills-area">Skills</a></li>
+                        <li><a class="short-cut" href="#experience-area">Experience</a></li>
+                        <li><a class="short-cut" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div><!--mobile-menu-->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
         </div><!--interface-->
     </header>
 
@@ -49,7 +74,7 @@
                 <div class="flex">
                     <div class="txt-home-area"> 
                         <h1>Nathan Brito<span>.</span></h1>
-                        <p>Systems Development and Analysis, Data Science and Google Cloud.</p>
+                        <p>System Development and Analysis, Data Science and Google Cloud.</p>
                     
                     <div class="btn-contact">
                         <a href="#contact">
@@ -76,10 +101,10 @@
 
                     <div class="txt-about">
                         <h2>Hello! <span>My name is Nathan Brito.</span></h2>
-                        <p>Passionate home technology and challenges, I specialize in Data Science and Cloud Technologies. 
-                            My inspiration is creativity and constant innovation, aiming to optimize results and achieve the online presence of my dreams.</p>
-                        <p>Passionate home technology and challenges, I specialize in Data Science and Cloud Technologies. 
-                            My inspiration is creativity and constant innovation, aiming to optimize results and achieve the online presence of my dreams.</p>
+                        <p>Passionate about technology and driven by challenges, I specialize in Data Science and Artificial Intelligence, with a focus on Cloud Technologies. 
+                            I am inspired by creativity and continuous innovation, always aiming to optimize results and achieve my ideal online presence.</p>
+                        <p>Currently, I am enrolled in the System Development and Analysis technology course at the Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, 
+                            futhermore seeking for a job opportunity in the technology market.</p>
                    
                     <div class="btn-social">
                         <a href="https://www.linkedin.com/in/nathan-brito-930222197/"><button><i class="bi bi-linkedin"></i></button></a>
@@ -108,9 +133,45 @@
                     <div class="projects-box">
                         <i class="bi bi-code-square"></i>
                         <h3>Data Visualization and Dashboards with Excel and Looker Studio</h3>
-                        <p>Final Project on the Data Visualization Course by IBM</p>
+                        <p>Final Project on the Professional Data Visualization Course by IBM</p>
                             <div class="btn-git">
                                 <a href="https://github.com/ney333/Data-Visualization-and-Dashboards-with-Excel-and-Cognos.git">
+                            <button><i class="bi bi-git"></i></button></a>
+                            </div><!--btn-git-->
+                    </div><!--projects-box-->
+
+                    <div class="projects-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Data Analyst Capstone Project</h3>
+                        <p>Final Project on the Professional Data Analyst Course by IBM</p>
+                            <div class="btn-git">
+                                <a href="https://github.com/ney333/IBM-Data-Analyst-Capstone-Project.git">
+                            <button><i class="bi bi-git"></i></button></a>
+                            </div><!--btn-git-->
+                    </div><!--projects-box-->
+
+                </div><!--flex-->
+
+                <div class="content">
+                    <div id="moreContent" class="hidden"> 
+
+                <div class="flex">
+                    <div class="projects-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>House Sales in County USA</h3>
+                        <p>Data Analysis Project by IBM</p>
+                            <div class="btn-git">
+                            <a href="https://github.com/ney333/House-sales-in-County-USA-IBM-Course.git">
+                            <button><i class="bi bi-git"></i></button></a>
+                        </div><!--btn-git-->
+                    </div><!--projects-box-->
+
+                    <div class="projects-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>AI Based Web Application Development and Deployment</h3>
+                        <p>Final assignment: Python Project for AI Application Development course by IBM on Coursera</p>
+                            <div class="btn-git">
+                                <a href="https://github.com/ney333/AI-Based-Web-Application-Development-and-Deployment.git">
                             <button><i class="bi bi-git"></i></button></a>
                             </div><!--btn-git-->
                     </div><!--projects-box-->
@@ -126,6 +187,12 @@
                     </div><!--projects-box-->
 
                 </div><!--flex-->
+            </div><!--moreContent-->
+            <div class="btn-content">
+                <a href="#content">
+                    <button id="displayContent">Show More</button>
+                </a>
+            </div><!--content-->
             </div><!--interface-->
         </section><!--projects-->
 
@@ -146,6 +213,10 @@
                     <div class="img-cert" style="background-image: url(imgs/applied-data-science.png);">
                     <div class="overlay"><a href="https://coursera.org/verify/specialization/YFMCUYBA85M7"><button>Verify at Coursera</button></a></div>
                     </div><!--img-cert-->
+
+                    <div class="img-cert" style="background-image: url(imgs/ibm-data-analyst.png);">
+                        <div class="overlay"><a href="https://coursera.org/share/f72a866634559334a6c94eaf29e0c7d7"><button>Verify at Coursera</button></a></div>
+                        </div><!--img-cert-->
 
                     <div class="img-cert" style="background-image: url(imgs/google-cloud-arc.png);">
                     <div class="overlay"><a href="https://coursera.org/share/a3337bb2d49a25e99003dca89ea0733d"><button>Verify at Coursera</button></a></div>
@@ -235,11 +306,12 @@
                 <h2 class="title">Experience</h2>
                 <div class="flex">
                     <div class="txt-experience">
-                        <h2>Admnistrative Assistant - Health Surveillance Departament</h2>
+                        <h2>Administrative Assistant - Health Surveillance Department</h2>
                             <span class="span-time">October 2021 - July 2023</span>
-                            <p>Responsable for report writing, running inspections in the multiple types of establishments in the
-                                whole city, management, customer support (including B2C and B2B), participating in conferences
-                                and technical support. Experience using Microsoft Office (specially Word, Excel and Powerpoint).</p>
+                            <p>Responsible for report writing, conducting inspections in various types of establishments across the city, and managing operations. 
+                                Experienced in customer support for both B2C and B2B clients. 
+                                Additionally, I have participated in conferences and provided technical support. 
+                                Proficient in Microsoft Office, particularly Word, Excel, and PowerPoint.</p>
                     </div><!--txt-experience-->
                 </div><!--flex-->
             </div><!--interface-->
@@ -260,7 +332,7 @@
                 
                 <div class="txt-contact">
                     <div class="email"><h4><span>E-mail:</span></h4></div>
-                    <p>brito.nathan@aluno.fisp.edu.br</p>
+                    <p>brito.nathan@aluno.ifsp.edu.br</p>
                     <div class="social"><h4><span>Social Networks:</span></h4></div>
                     <div class="btn-social">
                         <a href="https://www.linkedin.com/in/nathan-brito-930222197/"><button><i class="bi bi-linkedin"></i></button></a>
@@ -278,7 +350,7 @@
     <footer>
         <div class="interface">
             <div class="line-footer">
-                <p>© 2024 | Nathan Brito | Todos os direitos reservados</p>
+                <p>© 2024 | Nathan Brito | All rights reserved</p>
             </div>
         </div><!--interface-->
     </footer>

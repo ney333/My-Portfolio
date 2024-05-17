@@ -65,34 +65,37 @@ const initSlider = () => {
 
 window.addEventListener("load", initSlider);
 
-/* Form submit */
-/*class FormSubmit {
-    constructor(settings){
-        this.settings = settings;
-        this.form = document.querySelector(settings.button);
-        if(this.form){
-            this.url = this.form.getAttribute("action");
-        }
+/* Menu Mobile */
+
+let btnMenu = document.getElementById('btn-menu');
+let menu = document.getElementById('mobile-menu');
+let overlay = document.getElementById('overlay-menu');
+
+btnMenu.addEventListener('click', ()=>{
+    menu.classList.add('open-menu')
+});
+
+menu.addEventListener('click', ()=>{
+    menu.classList.remove('open-menu')
+});
+
+overlay.addEventListener('click', ()=>{
+    menu.classList.remove('open-menu')
+});
+
+/* Show more and show less button */
+
+document.getElementById('displayContent').addEventListener('click', function() {
+    var moreContent = document.getElementById('moreContent');
+    var button = document.getElementById('displayContent');
+    
+    if (moreContent.classList.contains('hidden')) {
+        moreContent.classList.remove('hidden');
+        moreContent.classList.add('show');
+        button.textContent = 'Show Less';
+    } else {
+        moreContent.classList.remove('show');
+        moreContent.classList.add('hidden');
+        button.textContent = 'Show More';
     }
-
-    displaySuccess(){
-        this.form.innerHTML = this.settings.success;
-    }
-
-    displayError(){
-        this.form.innerHTML = this.settings.error;
-    }
-}
-
-SVGAnimatedTransformList() {
-    fetch(this.url, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json"
-        },
-        body: "",
-    });
-}
-
-const formSubmit = new FormSubmit({}); */
+});
